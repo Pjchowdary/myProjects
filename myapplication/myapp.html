@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>real mart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css1/style1.css">
+
+</head>
+<body>
+  <header ng-include="'views1/header1.html'"></header>
+  <nav ng-include="'views1/nav.html'"></nav>
+  
+      <div  class="container">
+     <main ng-view ></main>
+      </div> 
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDHMb6xXY2E-BY5tShUJxKbYCcBLnyBJ6k",
+        authDomain: "myapplication-1dab8.firebaseapp.com",
+        databaseURL: "https://myapplication-1dab8.firebaseio.com",
+        projectId: "myapplication-1dab8",
+        storageBucket: "myapplication-1dab8.appspot.com",
+        messagingSenderId: "572249374032"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular-route.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <script src="js1/app1.js"></script>
+    <script src="js1/registerCtr.js"></script>
+    <script src="js1/home.js"></script>
+    <script src="js1/sucessCtr.js"></script>
+
+
+
+   
+    <footer>
+      <div class="footer">
+  
+        <a href="#"><i class="fa fa-google"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        
+        </div>
+    </footer>  
+
+</body>
+</html>
